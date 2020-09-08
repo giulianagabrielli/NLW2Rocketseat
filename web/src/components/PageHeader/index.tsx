@@ -8,6 +8,7 @@ import './styles.css';
 
 interface PageHeaderProps {
     title: string;  
+    description?: string;
 }
 
 const PageHeader: React.FC<PageHeaderProps> = (props) => {
@@ -22,13 +23,15 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
 
                 <div className="header-content">
                     <strong>{props.title}</strong>
+                    { props.description && <p>{props.description}</p> }
+
                     {props.children}
                 </div>
             </header>
     )
 }
 
-export default PageHeader
+export default PageHeader;
 
 //interface: para definir o formato das tipagens de um objeto
 //React.FunctionComponent ou React.FC => <PageHeaderProps> são as propriedades que o componente pode receber

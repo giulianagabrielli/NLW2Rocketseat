@@ -40,6 +40,14 @@
     color: var(--color-title-in-primary);
 }
 
+.page-header .header-content p {
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--color-text-in-primary);
+    margin-top: 2.4rem;
+}
+
 @media (min-width: 700px) {
     .page-header {
         height: 340px;
@@ -63,4 +71,45 @@
     .page-header .header-content strong {
         max-width: 350px;
     }
+}
+
+.page-header .header-content {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin: 3.2rem auto;
+}
+
+.teacher-item header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.teacher-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.teacher-item header div {
+    margin-left: 2.4rem;
+}
+
+.teacher-item header div strong {
+    font: 100 2.4rem Archivo;
+    display: block;
+    color: var(--color-text-title);
+}
+
+.teacher-item header div span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 0.4rem;
+}
+
+.teacher-item > p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
 }
